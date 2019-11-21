@@ -1,0 +1,4 @@
+---
+repository:
+  description: Ansible role to install and configure XXX on your system.
+  homepage: https://twitter.com/tehtbl
