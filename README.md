@@ -1,28 +1,19 @@
-skeleton
-=========
-
-<img src="https://docs.ansible.com/ansible-tower/3.2.4/html_ja/installandreference/_static/images/logo_invert.png" width="10%" height="10%" alt="Ansible logo" align="right"/>
-
-<a href="https://travis-ci.org/tehtbl/ansible-role-skeleton">
-  <img src="https://travis-ci.org/tehtbl/ansible-role-skeleton.svg?branch=master" alt="Build status"/>
-</a>
-
 <!-- get id via: ansible-galaxy info tehtbl.skeleton | grep -i "id:" -->
-<img src="https://img.shields.io/ansible/role/44496"/>
-<img src="https://img.shields.io/ansible/quality/44496"/>
-<img src="https://img.shields.io/ansible/role/d/44496"/>
+<a href="https://galaxy.ansible.com/tehtbl/skeleton"><img src="https://img.shields.io/ansible/role/44496"/></a> <a href="https://galaxy.ansible.com/tehtbl/skeleton"><img src="https://img.shields.io/ansible/quality/44496"/></a> <a href="https://travis-ci.org/tehtbl/ansible-role-skeleton"><img src="https://travis-ci.org/tehtbl/ansible-role-bootstrap.svg?branch=master" alt="Build status"/></a>
+
+Role Description
+================
 
 Ansible role to install and configure XXX on your system.
 
 Example Playbook
-----------------
+================
 
 This example is taken from `molecule/resources/playbook.yml`:
-
 ```yaml
 ---
 # ------------------------------------------------------------------------
-# skeleton role comment 
+# skeleton your hosts
 # ------------------------------------------------------------------------
 - name: Converge
   hosts: all
@@ -34,31 +25,31 @@ This example is taken from `molecule/resources/playbook.yml`:
 ```
 
 Role Variables
---------------
+==============
 
 These variables are set in `defaults/main.yml`:
 
 ```yaml
 ---
-# defaults file
+# defaults file for skeleton
 
 ```
 
 Requirements
-------------
+============
 
 - Access to a repository containing packages, likely on the internet.
 - A recent version of Ansible (Tests run on the current, previous and next release of Ansible).
 
 Context
--------
+=======
 
-This role is a part of many compatible roles. Have a look at [my GH repos](https://github.com/tehtbl?utf8=%E2%9C%93&tab=repositories&q=ansible-role&type=&language=) for further information.
+This role is a part of many compatible roles. Have a look at [my other roles](https://github.com/tehtbl?utf8=%E2%9C%93&tab=repositories&q=ansible-role-&type=&language=) for further information.
 
 Compatibility
--------------
+=============
 
-This role has been tested on these [container images](https://hub.docker.com/):
+This role has been tested on these [Docker](https://hub.docker.com/) images:
 
 |container|tag|allow_failures|
 |---------|---|--------------|
@@ -76,7 +67,7 @@ This role has been tested on these Ansible versions:
 - git+https://github.com/ansible/ansible.git@devel
 
 Testing Using Tox
------------------
+=================
 
 [Unit tests](https://travis-ci.org/tehtbl/ansible-role-skeleton) are done on every commit, pull request, release and periodically.
 
@@ -113,7 +104,7 @@ IMAGE="debian" TAG="stable" tox -e py37-ansible-current
 ```
 
 Testing Using Vagrant
----------------------
+=====================
 
 Install `vagrant` plugins via:
 ```
@@ -126,16 +117,16 @@ vagrant up
 ```
 
 License
--------
+=======
 
 GNU General Public License v3.0
 
 Author Information
-------------------
+==================
 
-[@tehtbl](https://github.com/tehtbl)
+<a href="https://github.com/tehtbl"><img src="https://img.shields.io/badge/GitHub-tehtbl-blue/?style=flat&logo=github" /></a> <a href="https://twitter.com/tehtbl"><img src="https://img.shields.io/badge/Twitter-tehtbl-blue/?style=flat&logo=twitter" /></a>
 
 Sources
--------
+=======
 
 This work is based on the great work of many people, e.g. [robertdebock](https://github.com/robertdebock) and [geerlingguy](https://github.com/geerlingguy). Thank you!
