@@ -11,7 +11,7 @@ lint:
     config-file: molecule/default/yaml-lint.yml
 
 platforms:
-  - name: "${ROLE_NAME:-no_role}-${IMAGE}-${TAG:-no_tag}-${TOX_ENVNAME:-no_tox}"
+  - name: "${ROLE_NAME:-no_role_name}-${IMAGE}-${TAG:-no_tag}-${TOX_ENVNAME:-no_tox}"
     image: "${NAMESPACE:-tehtbl}/${IMAGE:-ubuntu}:${TAG:-latest}"
     command: /sbin/init
     volumes:

@@ -1,7 +1,0 @@
----
-- name: Converge
-  hosts: all
-  become: true
-  gather_facts: false
-  roles:
-    - ansible-role-skeleton

@@ -1,0 +1,10 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: false
+
+  roles:
+    - role: tehtbl.bootstrap
+    - role: tehtbl.{{ role_name }}
+      {{ role_name }}_parameter: value
