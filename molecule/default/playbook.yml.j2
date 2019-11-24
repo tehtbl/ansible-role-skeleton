@@ -6,5 +6,6 @@
 
   roles:
     - role: tehtbl.bootstrap
-    - role: tehtbl.{{ role_name }}
+    - role: {{ role_name }}
       {{ role_name }}_parameter: value
+{# this comment is needed for having a newline at EOF to pass yamllint tests #}

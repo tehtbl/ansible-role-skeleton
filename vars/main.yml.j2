@@ -7,3 +7,4 @@ _{{ role_name }}_packages:
     - {{ role_name }}
 
 {{ role_name }}_packages: "{% raw -%}{{{%- endraw %} _{{ role_name }}_packages[ansible_os_family] | default(_{{ role_name }}_packages['default']) {% raw -%}}}{%- endraw %}"
+{# this comment is needed for having a newline at EOF to pass yamllint tests #}

@@ -21,6 +21,7 @@
   service:
     name: "{% raw -%}{{{%- endraw %} {{ role_name }}_service {%raw -%}}}{%- endraw %}"
     state: started
-    enabled: yes
+    enabled: true
   when:
     - ansible_virtualization_type != "docker"
+{# this comment is needed for having a newline at EOF to pass yamllint tests #}

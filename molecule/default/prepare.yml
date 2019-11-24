@@ -1,8 +1,5 @@
 ---
-- name: Converge
+- name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
-
-  roles:
-    - role: tehtbl.bootstrap
+  become: true
+  gather_facts: false
