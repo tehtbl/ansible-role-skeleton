@@ -8,16 +8,16 @@
 #
 $cpus = Integer(ENV.fetch('VMCPUS', '2'))  # create VMs with that many cpus
 $mem = Integer(ENV.fetch('VMMEM', '8192'))  # create VMs with that many cpus
-$rolename = "ansible-role-{{ role_name }}"
+$rolename = "{{ role_name }}"
 
 #
 # provision user
 #
 def fs_init(user)
   return <<-EOF
-    find /vagrant/#{$rolename} -name '__pycache__' -exec rm -rf {} \\; 2> /dev/null
+    find /vagrant/ -name '__pycache__' -exec rm -rf {} \\; 2> /dev/null
 
-    chown -R #{user} /vagrant/#{$rolename}
+    chown -R #{user} /vagrant/ansible-role-#{$rolename}
     touch ~#{user}/.bash_profile ; chown #{user} ~#{user}/.bash_profile
 
     echo 'export LANG=en_US.UTF-8' >> ~#{user}/.bash_profile
