@@ -2,7 +2,7 @@
 galaxy_info:
   author: https://github.com/tehtbl
   role_name: {{ role_name }}
-  description: Ansible role to install and configure {{ role_name }} on your system.
+  description: Install and configure {{ role_name }} on a system.
   license: GNU General Public License v3.0
   company: None
   min_ansible_version: 2.8
@@ -18,8 +18,9 @@ galaxy_info:
         - bionic
 
   galaxy_tags:
-    - bootstrap
+    - {{ role_name }}
     - installer
+    - client
     - server
     - system
     - debian
