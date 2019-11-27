@@ -2,7 +2,7 @@ How To Use This Role
 ====================
 
 ```
-ansible-galaxy init --role-skeleton ./ansible-role-skeleton rolename
+ansible-galaxy init --role-skeleton ansible-role-skeleton rolename
 mv rolename ansible-role-rolename
 cd ansible-role-rolename
 ```
